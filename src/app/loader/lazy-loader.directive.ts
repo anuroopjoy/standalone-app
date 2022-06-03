@@ -12,6 +12,7 @@ import { LoaderService } from './loader.service';
 
 @Directive({
   selector: '[appLazyLoader]',
+  standalone: true
 })
 export class LazyLoaderDirective implements OnChanges {
   @Input() appLazyLoader!: Loader;

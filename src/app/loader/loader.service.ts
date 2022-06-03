@@ -8,11 +8,11 @@ import {
 } from '@angular/core';
 import { LoadChildrenCallback } from '@angular/router';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class LoaderService {
-  constructor() {}
+  constructor() {
+    console.log('loader service created');
+  }
 
   loadComponent(args: {
     loader: LoadChildrenCallback;
